@@ -1,0 +1,61 @@
+.add-designation,.edit-designation{
+    padding: 10px 0px 0px 10px;
+}
+.add-designation h3,.edit-designation h3{
+    color: #858585;
+}
+form{
+    text-align: center;
+    width: 70%;
+    display: flex;
+}
+form input{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+input[type='submit']{
+    display: inline-block;
+    width: 50%;
+}
+.success{
+    background-color: #00ac009c;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+}
+.danger{
+    background-color: #ac14009c;
+    border: 1px solid rgb(128, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+}
+#designation_table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px auto auto auto;
+    text-align: center;
+}
+
+#designation_table td,th{
+    padding: 0.5rem;
+}
+
+#designation_table th{
+    background-color: rgb(126, 225, 255);
+    border-top: 1px solid black;
+}
+
+#designation_table tr:last-child{
+    border-bottom: 1px solid black;
+}
+#designation_table tr:nth-child(even){
+    background-color: #ddd;
+}
+#designation_table tr:hover{
+    background-color: #d0d0d0;
+}
+
+.disabled{
+    display: none;
+}

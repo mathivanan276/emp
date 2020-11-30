@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/designation.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management</h1>
+    </header>
+    <nav>
+        <!-- <object data="./nav.html" class='navigation'></object> -->
+        <ul class="nav-bar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a >Employee</a></li>
+            <li><a>Project</a></li>
+            <li><a href="./designation.html" class="active">Designation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="add-designation">
+            <h3>Add Designation</h3>
+            <div id="add-alert"></div>
+            <form id="myform">
+                <input type="text" id="designation" placeholder="Designation" required/>
+                <input type="submit" name="submit" value="Add Designation"/>
+            </form>
+        </section>
+        <section class="edit-designation" id="edit" style="display: none;">
+            <h3>Edit Designation</h3>
+            <div id="edit-alert"></div>
+            <form id="myeditform">
+                <input type="text" id="designation" placeholder="Designation" required/>
+                <input type="text" id="id" required disabled/>
+                <input type="submit" name="submit" value="Edit Designation"/>
+            </form>
+        </section>
+        <section class="add-designation">
+            <h3>All Designation</h3>
+            <table id="designation_table">
+            <tr>
+                <th>S.no</th>
+                <th>Designation</th>
+                <th></th>
+            </tr>
+        </table>
+        </section>
+    </main>
+    <script type='module' src="./js/designation.js"></script>
+    <script type="module" src="./js/fetch.js"></script>
+</body>
+</html>
